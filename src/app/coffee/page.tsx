@@ -10,7 +10,7 @@ import { IMAGES } from "@/lib/images";
 export const metadata: Metadata = {
   title: "Our Coffee | Arabica & Robusta — AAA, AA, A, B & C Grades",
   description:
-    "High Range Coffee exports washed Arabica and Robusta in AAA, AA, A, B and C grades, classified by screen size, density and defect count to Coffee Board of India standards.",
+    "High Range Coffee exports Arabica and Robusta in AAA, AA, A, B and C grades, classified by screen size, density and defect count to Coffee Board of India standards.",
   alternates: { canonical: "/coffee" },
 };
 
@@ -62,8 +62,8 @@ export default function CoffeePage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <SectionHeading
           eyebrow="Arabica"
-          title="Washed Arabica — AAA to C"
-          description="Grown across the misty, high-altitude tracts of the High Range belt, our washed Arabica is sorted through all five grades for a clean, bright cup at every tier."
+          title="Arabica — AAA to C"
+          description="Grown across the misty, high-altitude tracts of the High Range belt, our Arabica is sorted through all five grades for a clean, bright cup at every tier."
         />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           {arabicaGrades.map((grade, i) => (
@@ -76,7 +76,7 @@ export default function CoffeePage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
           <SectionHeading
             eyebrow="Robusta"
-            title="Washed Robusta — AAA to C"
+            title="Robusta — AAA to C"
             description="Our Robusta parchment lots deliver the strength, body and crema base sought by espresso and instant-coffee blenders, across the same five-tier grade ladder."
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">

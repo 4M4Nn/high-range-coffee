@@ -113,9 +113,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Arabica AAA",
     species: "Arabica",
     grade: "AAA",
-    process: "Washed (Plantation)",
+    process: "Plantation",
     description:
-      "Our top-tier washed Arabica — the boldest, most uniform bean size we grade, wet-processed and sun-dried for a clean, bright cup. AAA is reserved for lots with the lowest defect count, making it the benchmark grade for roasters and trading houses who want the very best of a season's crop.",
+      "Our top-tier Arabica — the boldest, most uniform bean size we grade, processed and sun-dried for a clean, bright cup. AAA is reserved for lots with the lowest defect count, making it the benchmark grade for roasters and trading houses who want the very best of a season's crop.",
     cuppingNotes: ["Bright acidity", "Silky body", "Citrus and brown sugar"],
     screenSize: "Screen 19+ (bold)",
     image: IMAGES.greenBeans,
@@ -125,9 +125,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Arabica AA",
     species: "Arabica",
     grade: "AA",
-    process: "Washed (Plantation)",
+    process: "Plantation",
     description:
-      "A large, dense washed Arabica just below AAA in screen size, combining excellent cup clarity with strong visual bean quality — one of our most widely traded premium grades.",
+      "A large, dense Arabica just below AAA in screen size, combining excellent cup clarity with strong visual bean quality — one of our most widely traded premium grades.",
     cuppingNotes: ["Clean cup", "Balanced acidity", "Notes of stone fruit"],
     screenSize: "Screen 18",
     image: IMAGES.dryingYard,
@@ -137,9 +137,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Arabica A",
     species: "Arabica",
     grade: "A",
-    process: "Washed (Plantation)",
+    process: "Plantation",
     description:
-      "Our standard export-grade washed Arabica, consistently cupped and graded to Coffee Board of India norms — a dependable everyday grade for roasters building consistent blends.",
+      "Our standard export-grade Arabica, consistently cupped and graded to Coffee Board of India norms — a dependable everyday grade for roasters building consistent blends.",
     cuppingNotes: ["Mild acidity", "Smooth body", "Well-rounded finish"],
     screenSize: "Screen 17",
     image: IMAGES.cherries,
@@ -149,9 +149,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Arabica B",
     species: "Arabica",
     grade: "B",
-    process: "Washed (Plantation)",
+    process: "Plantation",
     description:
-      "A smaller-screen washed Arabica offering excellent value for volume buyers and blenders, without compromising on the clean washed-process profile our buyers expect.",
+      "A smaller-screen Arabica offering excellent value for volume buyers and blenders, without compromising on the clean, consistent profile our buyers expect.",
     cuppingNotes: ["Consistent cup", "Light acidity", "Versatile for blending"],
     screenSize: "Screen 16",
     image: IMAGES.farmerPortrait,
@@ -161,9 +161,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Arabica C",
     species: "Arabica",
     grade: "C",
-    process: "Washed (Plantation)",
+    process: "Plantation",
     description:
-      "Our commercial-grade washed Arabica, ideal for large-volume blends and buyers prioritising competitive pricing while still sourcing genuine High Range-belt Arabica.",
+      "Our commercial-grade Arabica, ideal for large-volume blends and buyers prioritising competitive pricing while still sourcing genuine High Range-belt Arabica.",
     cuppingNotes: ["Approachable cup", "Low acidity", "Blend-friendly base"],
     screenSize: "Screen 14/15",
     image: IMAGES.cupping,
@@ -173,9 +173,9 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Robusta AAA",
     species: "Robusta",
     grade: "AAA",
-    process: "Washed (Parchment)",
+    process: "Parchment",
     description:
-      "Our top-tier washed Robusta parchment — bold, dense beans with minimal defects, delivering the strength and crema base espresso and instant-coffee blenders demand, in our cleanest, most premium Robusta lot.",
+      "Our top-tier Robusta parchment — bold, dense beans with minimal defects, delivering the strength and crema base espresso and instant-coffee blenders demand, in our cleanest, most premium Robusta lot.",
     cuppingNotes: ["Bold body", "Low acidity", "Strong, dense crema base"],
     screenSize: "Screen 19+ (bold)",
     image: IMAGES.aerialEstate,
@@ -185,7 +185,7 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Robusta AA",
     species: "Robusta",
     grade: "AA",
-    process: "Washed (Parchment)",
+    process: "Parchment",
     description:
       "A large, dense Robusta parchment grade prized for a dependable, full-bodied cup with a clean finish — one of our most requested Robusta grades among trading houses.",
     cuppingNotes: ["Full body", "Earthy tones", "Clean, dependable finish"],
@@ -197,7 +197,7 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Robusta A",
     species: "Robusta",
     grade: "A",
-    process: "Washed (Parchment)",
+    process: "Parchment",
     description:
       "A standard export-grade Robusta parchment, consistently graded and quality-checked — a reliable base for espresso blends and instant-coffee manufacturing.",
     cuppingNotes: ["Medium body", "Nutty notes", "Consistent strength"],
@@ -209,7 +209,7 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Robusta B",
     species: "Robusta",
     grade: "B",
-    process: "Washed (Parchment)",
+    process: "Parchment",
     description:
       "A smaller-screen Robusta parchment offering strong value for volume buyers, retaining the bold character Robusta blenders rely on at a more competitive price point.",
     cuppingNotes: ["Robust character", "Low acidity", "Value for volume"],
@@ -221,7 +221,7 @@ export const coffeeGrades: CoffeeGrade[] = [
     name: "Robusta C",
     species: "Robusta",
     grade: "C",
-    process: "Washed (Parchment)",
+    process: "Parchment",
     description:
       "Our commercial-grade Robusta, well suited to large-volume instant-coffee and blend manufacturing where price competitiveness matters most, while still meeting our quality baseline.",
     cuppingNotes: ["Strong base", "Bold, simple profile", "Blend-friendly"],
@@ -345,7 +345,7 @@ export const sustainabilityPoints: SustainabilityPoint[] = [
   {
     title: "Water-Conscious Processing",
     description:
-      "Our washed-process lots are processed with careful attention to water use at our curing works, in line with responsible wet-milling practice.",
+      "Every lot is processed with careful attention to water use at our curing works, in line with responsible wet-milling practice.",
     icon: "Droplets",
   },
 ];
@@ -418,7 +418,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "What is the installed processing capacity of High Range Coffee?",
     answer:
-      "Our curing works has an installed processing capacity of 8,000 metric tonnes, handling both Arabica and Robusta coffee across washed and natural process methods.",
+      "Our curing works has an installed processing capacity of 8,000 metric tonnes, handling both Arabica and Robusta coffee across our full AAA-to-C grade range.",
   },
   {
     question: "What certifications does High Range Coffee hold?",
@@ -433,7 +433,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Is Indian coffee from High Range Coffee suitable for specialty and espresso roasting?",
     answer:
-      "Yes. Our washed Arabica Plantation grades and natural Arabica Cherry lots offer clean-to-fruit-forward cup profiles suited to specialty roasting, while our Robusta Cherry and Parchment grades provide the bold body and crema base sought for espresso and blend roasting.",
+      "Yes. Our Arabica grades (AAA to C) offer a clean, bright cup profile well suited to specialty roasting, while our Robusta grades (AAA to C) provide the bold body and crema base sought for espresso and blend roasting.",
   },
   {
     question: "What is the minimum order quantity for export?",
