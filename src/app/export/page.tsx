@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, Globe2, ShieldCheck, TimerReset, Truck } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
@@ -79,7 +79,7 @@ export default function ExportPage() {
         image={IMAGES.exportContainers}
       />
 
-      <section className="mx-auto max-w-7xl px-4 pt-16 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 sm:pt-16 lg:px-8">
         <SectionHeading
           eyebrow="Trusted Already, at Scale"
           title="The Same Curing Works Nestle, ITC and Olam Agri Rely On"
@@ -92,11 +92,11 @@ export default function ExportPage() {
         </div>
       </section>
 
-      <div className="mt-16">
+      <div className="mt-12 sm:mt-16">
         <StatsBar stats={heroStats} />
       </div>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Why Buyers Choose Us"
           title="What Makes High Range Coffee a Low-Risk, High-Reliability Supplier"
@@ -120,7 +120,7 @@ export default function ExportPage() {
       </section>
 
       <section className="bg-muted">
-        <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Certifications & Compliance"
             title="Export-Ready Credentials Buyers Can Rely On"
@@ -144,16 +144,16 @@ export default function ExportPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
             eyebrow="Grades Available for Export"
             title="Choose the Grade That Fits Your Roast Profile"
-            description="A quick reference across our washed Plantation grades and natural Cherry lots — full cupping notes are on our Coffee page."
+            description="A quick reference across our AAA-to-C grades in both Arabica and Robusta — full cupping notes are on our Coffee page."
           />
           <Link
             href="/coffee"
-            className={cn(buttonVariants({ variant: "outline" }), "shrink-0")}
+            className={cn(buttonVariants({ variant: "outline" }), "h-11 shrink-0 px-5")}
           >
             View Full Grade Details
           </Link>
@@ -172,7 +172,10 @@ export default function ExportPage() {
               {coffeeGrades.map((grade) => (
                 <tr key={grade.slug} className="bg-card">
                   <td className="px-5 py-3 font-medium text-primary">
-                    <Link href="/coffee" className="hover:text-secondary">
+                    <Link href="/coffee" className="flex items-center gap-2.5 hover:text-secondary">
+                      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary font-serif text-[11px] font-bold text-primary-foreground">
+                        {grade.grade}
+                      </span>
                       {grade.name}
                     </Link>
                   </td>
@@ -187,7 +190,7 @@ export default function ExportPage() {
       </section>
 
       <section className="bg-muted">
-        <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Export Process"
             title="From Enquiry to Container: Our 5-Step Export Process"
@@ -214,7 +217,7 @@ export default function ExportPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Shipping & Terms"
           title="Shipping Terms & Minimum Order Quantities"
@@ -223,19 +226,22 @@ export default function ExportPage() {
       </section>
 
       <section className="bg-primary text-primary-foreground">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8">
           <Reveal>
-            <h2 className="font-serif text-2xl font-semibold sm:text-3xl">
+            <h2 className="font-serif text-xl font-semibold sm:text-3xl">
               Prefer to Talk Directly? Our Export Desk Is One Call Away
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-primary-foreground/80">
+            <p className="mx-auto mt-4 max-w-xl text-sm text-primary-foreground/80 sm:text-base">
               For urgent volume enquiries or an active shipping window, call or WhatsApp us
               directly and we&apos;ll confirm availability the same day.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
               <a
                 href={`tel:${siteConfig.contact.phones[0].replace(/\s/g, "")}`}
-                className={cn(buttonVariants({ size: "lg" }), "h-11 px-6 bg-accent text-primary hover:bg-accent/90")}
+                className={cn(
+                  buttonVariants({ size: "lg" }),
+                  "h-12 w-full justify-center px-6 bg-accent text-primary hover:bg-accent/90 sm:h-11 sm:w-auto"
+                )}
               >
                 Call {siteConfig.contact.phones[0]}
               </a>
@@ -245,7 +251,7 @@ export default function ExportPage() {
                 rel="noopener noreferrer"
                 className={cn(
                   buttonVariants({ size: "lg", variant: "outline" }),
-                  "h-11 px-6 border-white/40 bg-white/5 text-white hover:bg-white/15 hover:text-white"
+                  "h-12 w-full justify-center border-white/40 bg-white/5 px-6 text-white hover:bg-white/15 hover:text-white sm:h-11 sm:w-auto"
                 )}
               >
                 Chat on WhatsApp
@@ -256,7 +262,7 @@ export default function ExportPage() {
       </section>
 
       <section className="bg-muted">
-        <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Request a Quote"
             title="Get a Quote for Your Next Consignment"

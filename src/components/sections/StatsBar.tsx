@@ -16,7 +16,7 @@ export default function StatsBar({
           : "bg-muted text-foreground"
       }
     >
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-4 py-10 sm:gap-8 sm:px-6 sm:py-12 md:grid-cols-4 lg:px-8">
         {stats.map((stat, i) => (
           <Reveal key={stat.label} delay={i * 0.08} className="text-center">
             <p className="font-serif text-3xl font-semibold text-accent sm:text-4xl">

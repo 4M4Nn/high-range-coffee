@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
 import ClienteleStrip from "@/components/sections/ClienteleStrip";
@@ -22,7 +22,7 @@ export default function ClientelePage() {
         image={IMAGES.aerialEstate}
       />
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Who We Serve"
           title="A Client Roster Built on Consistency"
@@ -36,7 +36,7 @@ export default function ClientelePage() {
       </section>
 
       <section className="bg-muted">
-        <div className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20 text-center sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Why Buyers Choose Us"
             title="Consistency, Traceability & Nearly Three Decades of Trust"

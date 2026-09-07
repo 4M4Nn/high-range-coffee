@@ -21,12 +21,12 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/90 backdrop-blur">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="font-serif text-xl font-semibold tracking-tight text-primary sm:text-2xl">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
+        <Link href="/" className="flex min-w-0 flex-col leading-tight">
+          <span className="truncate font-serif text-lg font-semibold tracking-tight text-primary sm:text-xl lg:text-2xl">
             High Range Coffee
           </span>
-          <span className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:text-xs">
+          <span className="hidden text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:block sm:text-xs">
             Curing Works &amp; Exporters — Est. 1995
           </span>
         </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
           </a>
           <Link
             href="/export"
-            className={cn(buttonVariants(), "bg-primary text-primary-foreground hover:bg-primary/90")}
+            className={cn(buttonVariants(), "h-11 px-5 bg-primary text-primary-foreground hover:bg-primary/90")}
           >
             Request a Quote
           </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
 
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger
-            className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "lg:hidden")}
+            className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "h-11 w-11 shrink-0 lg:hidden")}
             aria-label="Open menu"
           >
             <Menu className="h-6 w-6" />
@@ -87,12 +87,19 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <a
+                href={`tel:${siteConfig.contact.phones[0].replace(/\s/g, "")}`}
+                className="mt-2 flex items-center gap-2 rounded-md px-3 py-2.5 text-base font-medium text-foreground/85 hover:bg-muted"
+              >
+                <Phone className="h-4 w-4" />
+                {siteConfig.contact.phones[0]}
+              </a>
               <Link
                 href="/export"
                 onClick={() => setOpen(false)}
                 className={cn(
                   buttonVariants(),
-                  "mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
+                  "mt-2 h-11 bg-primary text-primary-foreground hover:bg-primary/90"
                 )}
               >
                 Request a Quote

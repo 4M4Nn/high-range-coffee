@@ -18,7 +18,7 @@ export default function ProcessStepCard({
           reverse && "md:[&>*:first-child]:order-2"
         )}
       >
-        <div className="relative h-64 w-full overflow-hidden rounded-2xl sm:h-80">
+        <div className="relative h-52 w-full overflow-hidden rounded-2xl sm:h-72 lg:h-80">
           <Image
             src={step.image}
             alt={step.title}
@@ -28,11 +28,11 @@ export default function ProcessStepCard({
           />
         </div>
         <div>
-          <span className="font-serif text-5xl font-semibold text-accent/40">
+          <span className="font-serif text-4xl font-semibold text-accent/40 sm:text-5xl">
             {String(step.step).padStart(2, "0")}
           </span>
-          <h3 className="mt-2 font-serif text-2xl font-semibold text-primary">{step.title}</h3>
-          <p className="mt-3 text-base leading-relaxed text-muted-foreground">{step.description}</p>
+          <h3 className="mt-2 font-serif text-xl font-semibold text-primary sm:text-2xl">{step.title}</h3>
+          <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{step.description}</p>
         </div>
       </div>
     </Reveal>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
 import NewsCard from "@/components/news/NewsCard";
@@ -26,7 +26,7 @@ export default function NewsPage() {
         image={IMAGES.cherries}
       />
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Latest Updates"
           title="All News & Consignments"

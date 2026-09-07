@@ -8,8 +8,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-4">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-4">
           <div>
             <h3 className="font-serif text-xl font-semibold">High Range Coffee</h3>
             <p className="mt-3 text-sm text-primary-foreground/75">

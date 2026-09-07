@@ -61,7 +61,7 @@ export default async function NewsDetailPage({
           className="absolute inset-0 hero-scrim-page"
           style={{ transform: "translateZ(0)", willChange: "opacity" }}
         />
-        <div className="relative mx-auto w-full max-w-4xl px-4 pb-14 pt-32 sm:px-6 lg:px-8">
+        <div className="relative mx-auto w-full max-w-4xl px-4 pb-10 pt-24 sm:px-6 sm:pb-14 sm:pt-32 lg:px-8">
           <Link
             href="/news"
             className="mb-4 inline-flex items-center gap-1 text-sm font-medium text-white/80 hover:text-accent"
@@ -75,14 +75,14 @@ export default async function NewsDetailPage({
               {formatDate(item.date)}
             </span>
           </div>
-          <h1 className="max-w-3xl font-serif text-3xl font-semibold leading-tight sm:text-4xl">
+          <h1 className="max-w-3xl font-serif text-2xl font-semibold leading-tight sm:text-4xl">
             {item.title}
           </h1>
         </div>
       </section>
 
-      <article className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="space-y-6 text-base leading-relaxed text-foreground/90">
+      <article className="mx-auto max-w-3xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="space-y-6 text-sm leading-relaxed text-foreground/90 sm:text-base">
           {item.content.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
           ))}

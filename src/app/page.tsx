@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import StatsBar from "@/components/sections/StatsBar";
 import ClienteleSection from "@/components/sections/ClienteleSection";
@@ -22,7 +22,7 @@ export default function HomePage() {
       <Hero />
       <StatsBar stats={heroStats} />
 
-      <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 py-14 sm:py-20 text-center sm:px-6 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-[0.25em] text-secondary">
           A Tale of Love, Trust &amp; Taste
         </p>

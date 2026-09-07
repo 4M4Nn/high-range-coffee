@@ -15,14 +15,17 @@ export interface ClientItem {
   category: string;
 }
 
+export type GradeTier = "AAA" | "AA" | "A" | "B" | "C";
+
 export interface CoffeeGrade {
   slug: string;
   name: string;
   species: "Arabica" | "Robusta";
+  grade: GradeTier;
   process: string;
   description: string;
   cuppingNotes: string[];
-  screenSize?: string;
+  screenSize: string;
   image: string;
 }
 

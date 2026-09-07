@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
@@ -25,7 +25,7 @@ export default function AboutPage() {
         image={IMAGES.aerialEstate}
       />
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
         <Reveal className="relative h-72 overflow-hidden rounded-2xl sm:h-96">
           <Image
             src={IMAGES.farmerPortrait}
@@ -45,7 +45,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-muted">
-        <div className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Our Story"
             title="From a Village Plantation to a Global Export House"
@@ -71,7 +71,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 pb-6 pt-14 sm:px-6 sm:pb-10 sm:pt-20 lg:px-8">
         <SectionHeading
           eyebrow="Our Estate"
           title="A Heritage Measured in Hectares and Trees"
@@ -81,7 +81,7 @@ export default function AboutPage() {
       </section>
       <StatsBar stats={estateStats} dark={false} />
 
-      <section className="mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 py-14 sm:py-20 text-center sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Mission"
           title="An Image Built on Trust and Values"

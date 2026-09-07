@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import { Droplets, Handshake, Leaf, TreePine } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
@@ -28,7 +28,7 @@ export default function SustainabilityPage() {
         image={IMAGES.aerialEstate}
       />
 
-      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <section className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
           <SectionHeading
             eyebrow="Our Commitment"
@@ -49,7 +49,7 @@ export default function SustainabilityPage() {
 
       <StatsBar stats={estateStats} />
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Practices"
           title="How We Put Sustainability Into Practice"

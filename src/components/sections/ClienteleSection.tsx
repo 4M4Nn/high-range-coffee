@@ -1,4 +1,4 @@
-import SectionHeading from "@/components/sections/SectionHeading";
+﻿import SectionHeading from "@/components/sections/SectionHeading";
 import ClienteleStrip from "@/components/sections/ClienteleStrip";
 
 export default function ClienteleSection({
@@ -13,7 +13,7 @@ export default function ClienteleSection({
   compact?: boolean;
 }) {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
       <SectionHeading
         eyebrow={eyebrow}
         title={title}

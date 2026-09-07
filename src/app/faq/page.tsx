@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
 import FAQAccordion from "@/components/faq/FAQAccordion";
@@ -40,7 +40,7 @@ export default function FaqPage() {
         image={IMAGES.cupping}
       />
 
-      <section className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-3xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading eyebrow="Answers" title="Common Questions From Buyers" />
         <div className="mt-10">
           <FAQAccordion items={faqItems} />

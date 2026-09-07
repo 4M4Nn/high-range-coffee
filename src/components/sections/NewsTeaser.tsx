@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { newsItems } from "@/lib/data";
 import NewsCard from "@/components/news/NewsCard";
@@ -11,7 +11,7 @@ export default function NewsTeaser() {
 
   return (
     <section className="bg-muted">
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <SectionHeading
             eyebrow="News & Consignments"

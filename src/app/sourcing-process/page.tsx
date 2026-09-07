@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
 import ProcessStepCard from "@/components/process/ProcessStepCard";
@@ -23,7 +23,7 @@ export default function SourcingProcessPage() {
         image={IMAGES.dryingYard}
       />
 
-      <section className="mx-auto max-w-7xl space-y-20 px-4 py-20 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl space-y-10 px-4 py-14 sm:space-y-16 sm:py-20 sm:px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Process"
           title="Six Stages, One Standard of Quality"
@@ -31,7 +31,7 @@ export default function SourcingProcessPage() {
           align="center"
           className="mx-auto"
         />
-        <div className="space-y-16">
+        <div className="space-y-10 sm:space-y-16">
           {processSteps.map((step, i) => (
             <ProcessStepCard key={step.step} step={step} reverse={i % 2 === 1} />
           ))}

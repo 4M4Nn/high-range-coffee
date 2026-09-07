@@ -9,7 +9,7 @@ import { IMAGES } from "@/lib/images";
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[88svh] items-end overflow-hidden bg-primary text-white">
+    <section className="relative flex min-h-[100svh] items-end overflow-hidden bg-primary text-white sm:min-h-[90svh]">
       <Image
         src={IMAGES.heroEstate}
         alt="Misty hills of the High Range coffee growing belt in Kerala and Coorg"
@@ -23,9 +23,9 @@ export default function Hero() {
         style={{ transform: "translateZ(0)", willChange: "opacity" }}
       />
 
-      <div className="relative mx-auto w-full max-w-7xl px-4 pb-16 pt-40 sm:px-6 lg:px-8 lg:pb-24">
+      <div className="relative mx-auto w-full max-w-7xl px-4 pb-12 pt-28 sm:px-6 sm:pb-16 sm:pt-32 lg:px-8 lg:pb-24 lg:pt-40">
         <Reveal>
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-accent">
+          <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-accent sm:text-xs sm:tracking-[0.3em]">
             Curing Works &amp; Green Coffee Exporters &middot; Est. 1995
           </p>
         </Reveal>
@@ -42,10 +42,13 @@ export default function Hero() {
             other global buyers.
           </p>
         </Reveal>
-        <Reveal delay={0.45} className="mt-8 flex flex-wrap gap-4">
+        <Reveal delay={0.45} className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
           <Link
             href="/export"
-            className={cn(buttonVariants({ size: "lg" }), "h-11 px-6 bg-accent text-primary hover:bg-accent/90")}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "h-12 justify-center px-6 bg-accent text-primary hover:bg-accent/90 sm:h-11"
+            )}
           >
             Request a Quote <ArrowRight className="ml-1 h-4 w-4" />
           </Link>
@@ -53,7 +56,7 @@ export default function Hero() {
             href="/coffee"
             className={cn(
               buttonVariants({ size: "lg", variant: "outline" }),
-              "h-11 px-6 border-white/40 bg-white/5 text-white hover:bg-white/15 hover:text-white"
+              "h-12 justify-center border-white/40 bg-white/5 px-6 text-white hover:bg-white/15 hover:text-white sm:h-11"
             )}
           >
             Explore Our Coffee

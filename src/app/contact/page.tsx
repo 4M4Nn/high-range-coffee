@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import PageHero from "@/components/sections/PageHero";
 import SectionHeading from "@/components/sections/SectionHeading";
@@ -24,7 +24,7 @@ export default function ContactPage() {
         image={IMAGES.cupping}
       />
 
-      <section className="mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-5 lg:px-8">
+      <section className="mx-auto grid max-w-7xl gap-12 px-4 py-14 sm:py-20 sm:px-6 lg:grid-cols-5 lg:px-8">
         <div className="lg:col-span-2">
           <SectionHeading eyebrow="Get in Touch" title="Our Details" />
           <Reveal className="mt-8 space-y-6">

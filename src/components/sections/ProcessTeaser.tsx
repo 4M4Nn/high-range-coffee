@@ -10,8 +10,8 @@ import Reveal from "@/components/motion/Reveal";
 export default function ProcessTeaser() {
   return (
     <section className="bg-muted">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <Reveal className="relative h-72 overflow-hidden rounded-2xl sm:h-96">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-20 lg:grid-cols-2 lg:px-8">
+        <Reveal className="relative h-60 overflow-hidden rounded-2xl sm:h-80 lg:h-96">
           <Image
             src={IMAGES.dryingYard}
             alt="Green coffee sun-drying on patios at High Range Coffee's curing works in Coorg"
@@ -28,7 +28,7 @@ export default function ProcessTeaser() {
           />
           <Link
             href="/sourcing-process"
-            className={cn(buttonVariants(), "mt-6 bg-primary text-primary-foreground hover:bg-primary/90")}
+            className={cn(buttonVariants(), "mt-6 h-11 px-6 bg-primary text-primary-foreground hover:bg-primary/90")}
           >
             See Our Process <ArrowRight className="ml-1 h-4 w-4" />
           </Link>

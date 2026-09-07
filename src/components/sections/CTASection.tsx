@@ -21,16 +21,19 @@ export default function CTASection({
 }) {
   return (
     <section className="bg-forest text-forest-foreground">
-      <div className="mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-5xl px-4 py-14 text-center sm:px-6 sm:py-16 lg:px-8">
         <Reveal>
-          <h2 className="font-serif text-3xl font-semibold sm:text-4xl">{title}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-forest-foreground/85">
+          <h2 className="font-serif text-2xl font-semibold sm:text-4xl">{title}</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-forest-foreground/85 sm:text-base">
             {description}
           </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
             <Link
               href={primaryHref}
-              className={cn(buttonVariants({ size: "lg" }), "h-11 px-6 bg-accent text-primary hover:bg-accent/90")}
+              className={cn(
+                buttonVariants({ size: "lg" }),
+                "h-12 w-full justify-center px-6 bg-accent text-primary hover:bg-accent/90 sm:h-11 sm:w-auto"
+              )}
             >
               {primaryLabel} <ArrowRight className="ml-1 h-4 w-4" />
             </Link>
@@ -38,7 +41,7 @@ export default function CTASection({
               href={secondaryHref}
               className={cn(
                 buttonVariants({ size: "lg", variant: "outline" }),
-                "h-11 px-6 border-forest-foreground/30 bg-transparent text-forest-foreground hover:bg-white/10"
+                "h-12 w-full justify-center border-forest-foreground/30 bg-transparent px-6 text-forest-foreground hover:bg-white/10 sm:h-11 sm:w-auto"
               )}
             >
               {secondaryLabel}

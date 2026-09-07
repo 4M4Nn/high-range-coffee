@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { ArrowRight, Droplets, Handshake, Leaf, TreePine } from "lucide-react";
 import { sustainabilityPoints } from "@/lib/data";
 import SectionHeading from "@/components/sections/SectionHeading";
@@ -8,7 +8,7 @@ const iconMap = { TreePine, Leaf, Handshake, Droplets };
 
 export default function SustainabilityTeaser() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-7xl px-4 py-14 sm:py-20 sm:px-6 lg:px-8">
       <SectionHeading
         eyebrow="Sustainability"
         title="Shade-Grown, Forest-First, Built to Last"

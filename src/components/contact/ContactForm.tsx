@@ -86,6 +86,7 @@ export default function ContactForm() {
           </label>
           <Input
             id="name"
+            className="h-11"
             value={data.name}
             onChange={(e) => handleChange("name", e.target.value)}
             aria-invalid={Boolean(errors.name)}
@@ -101,6 +102,7 @@ export default function ContactForm() {
           <Input
             id="email"
             type="email"
+            className="h-11"
             value={data.email}
             onChange={(e) => handleChange("email", e.target.value)}
             aria-invalid={Boolean(errors.email)}
@@ -116,6 +118,7 @@ export default function ContactForm() {
           <Input
             id="phone"
             type="tel"
+            className="h-11"
             value={data.phone}
             onChange={(e) => handleChange("phone", e.target.value)}
             aria-invalid={Boolean(errors.phone)}
@@ -130,6 +133,7 @@ export default function ContactForm() {
           </label>
           <Input
             id="company"
+            className="h-11"
             value={data.company}
             onChange={(e) => handleChange("company", e.target.value)}
             placeholder="Your company"
@@ -142,6 +146,7 @@ export default function ContactForm() {
           </label>
           <Input
             id="country"
+            className="h-11"
             value={data.country}
             onChange={(e) => handleChange("country", e.target.value)}
             placeholder="Country of operation"
@@ -166,7 +171,7 @@ export default function ContactForm() {
 
       <button
         type="submit"
-        className={cn(buttonVariants({ size: "lg" }), "w-full bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto")}
+        className={cn(buttonVariants({ size: "lg" }), "h-11 w-full px-6 bg-primary text-primary-foreground hover:bg-primary/90 sm:w-auto")}
       >
         Send Enquiry
       </button>
