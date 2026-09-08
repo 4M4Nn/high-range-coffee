@@ -51,26 +51,26 @@
 }
 
 :root {
-  --background: #FAF6F0;
-  --foreground: #1E140D;
+  --background: #FAF7F1;
+  --foreground: #18110A;
   --card: #FFFFFF;
-  --card-foreground: #1E140D;
+  --card-foreground: #18110A;
   --popover: #FFFFFF;
-  --popover-foreground: #1E140D;
-  --primary: #2D1B12;
-  --primary-foreground: #FAF6F0;
-  --secondary: #A8562E;
-  --secondary-foreground: #FAF6F0;
-  --muted: #EFE6D8;
+  --popover-foreground: #18110A;
+  --primary: #170F09;
+  --primary-foreground: #F7F1E4;
+  --secondary: #8B4A2B;
+  --secondary-foreground: #F7F1E4;
+  --muted: #F0E7D8;
   --muted-foreground: #5C4A3A;
-  --accent: #C89B3C;
-  --accent-foreground: #1E140D;
+  --accent: #C6A15B;
+  --accent-foreground: #170F09;
   --destructive: oklch(0.577 0.245 27.325);
-  --border: #E2D4C0;
-  --input: #E2D4C0;
-  --ring: #C89B3C;
+  --border: #E4D6BF;
+  --input: #E4D6BF;
+  --ring: #C6A15B;
   --forest: #3F5D3A;
-  --forest-foreground: #FAF6F0;
+  --forest-foreground: #F7F1E4;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -150,23 +150,27 @@
 .hero-scrim {
   background-image: linear-gradient(
     to top,
-    rgba(45, 27, 18, 0.97) 0%,
-    rgba(45, 27, 18, 0.75) 45%,
-    rgba(45, 27, 18, 0.25) 100%
+    rgba(15, 9, 5, 0.97) 0%,
+    rgba(15, 9, 5, 0.88) 28%,
+    rgba(38, 24, 12, 0.58) 55%,
+    rgba(74, 50, 22, 0.26) 78%,
+    rgba(15, 9, 5, 0.1) 100%
   );
 }
 
 .hero-scrim-page {
   background-image: linear-gradient(
     to top,
-    rgba(45, 27, 18, 0.97) 0%,
-    rgba(45, 27, 18, 0.8) 45%,
-    rgba(45, 27, 18, 0.3) 100%
+    rgba(15, 9, 5, 0.97) 0%,
+    rgba(15, 9, 5, 0.9) 30%,
+    rgba(40, 25, 12, 0.62) 58%,
+    rgba(74, 50, 22, 0.32) 80%,
+    rgba(15, 9, 5, 0.16) 100%
   );
 }
 
 .text-gradient-gold {
-  background: linear-gradient(90deg, #C89B3C, #E8C874, #C89B3C);
+  background: linear-gradient(90deg, #A9803D, #E8CC8C, #A9803D);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;

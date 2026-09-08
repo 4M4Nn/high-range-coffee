@@ -20,24 +20,24 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/90 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-w-0 flex-col leading-tight">
-          <span className="truncate font-serif text-lg font-semibold tracking-tight text-primary sm:text-xl lg:text-2xl">
+    <header className="sticky top-0 z-50 w-full border-b border-accent/15 bg-primary/97 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 xl:px-8">
+        <Link href="/" className="flex min-w-0 shrink-0 flex-col leading-tight">
+          <span className="truncate font-serif text-lg font-semibold tracking-tight text-primary-foreground sm:text-xl">
             High Range Coffee
           </span>
-          <span className="hidden text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:block sm:text-xs">
+          <span className="hidden text-[10px] uppercase tracking-[0.2em] text-accent/90 sm:block sm:text-xs">
             Curing Works &amp; Exporters — Est. 1995
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-3.5 xl:flex">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm font-medium text-foreground/80 transition-colors hover:text-accent",
+                "whitespace-nowrap text-sm font-medium text-primary-foreground/75 transition-colors hover:text-accent",
                 pathname === link.href && "text-accent"
               )}
             >
@@ -46,17 +46,13 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <a
-            href={`tel:${siteConfig.contact.phones[0].replace(/\s/g, "")}`}
-            className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-accent"
-          >
-            <Phone className="h-4 w-4" />
-            {siteConfig.contact.phones[0]}
-          </a>
+        <div className="hidden shrink-0 xl:block">
           <Link
             href="/export"
-            className={cn(buttonVariants(), "h-11 px-5 bg-primary text-primary-foreground hover:bg-primary/90")}
+            className={cn(
+              buttonVariants(),
+              "h-11 shrink-0 whitespace-nowrap px-5 bg-accent text-primary hover:bg-accent/90"
+            )}
           >
             Request a Quote
           </Link>
@@ -64,7 +60,10 @@ export default function Navbar() {
 
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger
-            className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "h-11 w-11 shrink-0 lg:hidden")}
+            className={cn(
+              buttonVariants({ variant: "ghost", size: "icon" }),
+              "h-11 w-11 shrink-0 text-primary-foreground hover:bg-primary-foreground/10 hover:text-accent xl:hidden"
+            )}
             aria-label="Open menu"
           >
             <Menu className="h-6 w-6" />

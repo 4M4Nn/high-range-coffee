@@ -371,9 +371,9 @@ export const newsItems: NewsItem[] = [
     date: "2025-03-04",
     category: "Consignment",
     excerpt:
-      "A consignment of graded Plantation A and Arabica Cherry AB lots has been dispatched from our Coorg curing works to long-standing roasting partners in Europe.",
+      "A consignment of graded Arabica AAA and Robusta AAA lots has been dispatched from our Coorg curing works to long-standing roasting partners in Europe.",
     content: [
-      "We are pleased to confirm the dispatch of a consignment of graded Plantation A and Arabica Cherry AB coffee to long-standing roasting partners in Europe. The lots were cupped and approved by our quality team prior to container loading, with full documentation and phytosanitary certification handled by our export desk.",
+      "We are pleased to confirm the dispatch of a consignment of graded Arabica AAA and Robusta AAA coffee to long-standing roasting partners in Europe. The lots were cupped and approved by our quality team prior to container loading, with full documentation and phytosanitary certification handled by our export desk.",
       "This shipment forms part of our ongoing commitment to consistent, on-time delivery for our international buyers, drawing on 8,000 MT of installed processing capacity at our Coorg facility.",
       "Importers and roasters seeking similar grade specifications for upcoming shipping windows are encouraged to contact us to discuss availability.",
     ],
